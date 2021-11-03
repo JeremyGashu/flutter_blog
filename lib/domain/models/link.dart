@@ -59,7 +59,7 @@ class Meta {
         domain: json["domain"],
         title: json["title"],
         description: json["description"],
-        image: Image.fromJson(json["image"]),
+        image: json['image'] != null ? Image.fromJson(json["image"]) : null,
     );
 
     Map<String, dynamic> toJson() => {

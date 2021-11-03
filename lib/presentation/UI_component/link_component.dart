@@ -33,7 +33,7 @@ Widget _buildLink(LinkModel link) {
           Row(
             children: [
               Text(
-                link.meta.title,
+                link.meta.title ?? 'Link not found! ',
                 style: TextStyle(
                     fontStyle: FontStyle.italic,
                     fontSize: link.titleSize ?? 20,

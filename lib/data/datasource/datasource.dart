@@ -35,10 +35,18 @@ String sample2 = '''
             "data" : {
                 "style" : "unordered",
                 "items" : [
-                    "It is a block-styled editor",
-                    "It returns clean data output in JSON",
-                    "Designed to be extendable and pluggable with a simple API"
+                    "It is a "block 'example' "-styled editor",
+                    "It returns "clean" data output in JSON",
+                    "Designed to be 'extendable' and pluggable with a simple API"
                 ]
+            }
+        },
+        {
+            "id" : "14QtIhq8ew",
+            "type" : "list",
+            "data" : {
+                "style" : "unordered",
+                "items" : []
             }
         },
         {
@@ -53,14 +61,14 @@ String sample2 = '''
             "id" : "scJ2HqkFML",
             "type" : "paragraph",
             "data" : {
-                "text" : "Workspace in classic editors is made of a single contenteditable element, used to create different HTML markups. Editor.js <mark>workspace consists of separate Blocks: paragraphs, headings, images, lists, quotes, etc</mark>. Each of them is an independent contenteditable element (or more complex structure) provided by Plugin and united by Editor's Core."
+                "text" : "Workspace in classic editors is made of a single contenteditable element, used to create different HTML markups. Editor.js <mark class=\"cdx-marker\">workspace consists of separate Blocks: paragraphs, headings, images, lists, quotes, etc</mark>. Each of them is an independent contenteditable element (or more complex structure) provided by Plugin and united by Editor's Core."
             }
         },
         {
             "id" : "3v97p-ufpO",
             "type" : "paragraph",
             "data" : {
-                "text" : "There are dozens of <a href='https://google.com'>ready-to-use Blocks</a> and the <a href='https://google.com'>simple API</a> for creation any Block you need. For example, you can implement Blocks for Tweets, Instagram posts, surveys and polls, CTA-buttons and even games."
+                "text" : "There are dozens of <a href=\"https://github.com/editor-js\">ready-to-use Blocks</a> and the <a href=\"https://editorjs.io/creating-a-block-tool\">simple API</a> for creation any Block you need. For example, you can implement Blocks for Tweets, Instagram posts, surveys and polls, CTA-buttons and even games."
             }
         },
         {
@@ -82,7 +90,7 @@ String sample2 = '''
             "id" : "U1xX3pWX2a",
             "type" : "paragraph",
             "data" : {
-                "text" : "Given data can be used as you want: render with HTML for <code>Web clients</code>, render natively for <code>mobile apps</code>, create markup for <code>Facebook Instant Articles</code> or <code>Google AMP</code>, generate an <code>audio version</code> and so on."
+                "text" : "Given data can be used as you want: render with HTML for <code class=\"inline-code\">Web clients</code>, render natively for <code class=\"inline-code\">mobile apps</code>, create markup for <code class=\"inline-code\">Facebook Instant Articles</code> or <code class=\"inline-code\">Google AMP</code>, generate an <code class=\"inline-code\">audio version</code> and so on."
             }
         },
         {
@@ -91,11 +99,6 @@ String sample2 = '''
             "data" : {
                 "text" : "Clean data is useful to sanitize, validate and process on the backend."
             }
-        },
-        {
-            "id" : "ZHl8PtX_b-",
-            "type" : "delimiter",
-            "data" : {}
         },
         {
             "id" : "gJQB89k0eq",
@@ -111,7 +114,7 @@ String sample2 = '''
                 "file" : {
                     "url" : "https://codex.so/public/app/img/external/codex2x.png"
                 },
-                "caption" : "Cute Dog",
+                "caption" : "",
                 "withBorder" : false,
                 "stretched" : false,
                 "withBackground" : false
@@ -180,7 +183,7 @@ String sample2 = '''
             "id" : "cyGNbsUmn-",
             "type" : "table",
             "data" : {
-                "withHeadings" : true,
+                "withHeadings" : false,
                 "content" : [
                     [
                         "Name",
