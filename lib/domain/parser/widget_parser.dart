@@ -9,6 +9,7 @@ import 'package:prepreocessor_starter/domain/models/paragraph.dart';
 import 'package:prepreocessor_starter/domain/models/quote.dart';
 import 'package:prepreocessor_starter/domain/models/raw_html.dart';
 import 'package:prepreocessor_starter/domain/models/table.dart';
+import 'package:prepreocessor_starter/domain/models/video.dart';
 import 'package:prepreocessor_starter/domain/parser/widget_generator.dart';
 import 'package:prepreocessor_starter/domain/types/widget_types.dart';
 
@@ -34,10 +35,10 @@ class WidgetParser {
         return WidgetGenerator.generateWidgetFrom(RawHtmlModel.fromJson(json));
       case WidgetType.list:
         return WidgetGenerator.generateWidgetFrom(ListModel.fromJson(json));
-
       case WidgetType.table:
         return WidgetGenerator.generateWidgetFrom(TableModel.fromJson(json));
-
+      case WidgetType.video:
+        return WidgetGenerator.generateWidgetFrom(VideoModel.fromJson(json));
       default:
         return Container();
     }

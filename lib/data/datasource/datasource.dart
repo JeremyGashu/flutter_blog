@@ -202,6 +202,21 @@ String sample2 = '''
                     ]
                 ]
             }
+        },
+        {
+            "id" : "sXZD91Y_Eo",
+            "type" : "header",
+            "data" : {
+                "text" : "Youtube Video",
+                "level" : 2
+            }
+        },
+        {
+            "type" : "video",
+            "data" : {
+              "from" : "youtube",
+              "url" : "PkOstq4GuLk"
+            }
         }
     ],
     "version" : "2.22.2"

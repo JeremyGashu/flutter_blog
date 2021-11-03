@@ -15,7 +15,7 @@ String sanitizeString({String value}) {
       int firstIndex = content.indexOf("\"");
       int lastIndex = content.lastIndexOf("\"");
       String substring = content.substring(firstIndex + 1, lastIndex);
-      substring = substring.replaceAll("\"", "'");
+      substring = substring.replaceAll("\"", "''");
       if (val[currentLine + 1] != null && val[currentLine + 1].trim() != "}") {
         cleared += "\"text\" : \"$substring\",\n";
       } else {
@@ -26,7 +26,7 @@ String sanitizeString({String value}) {
       int firstIndex = content.indexOf("\"");
       int lastIndex = content.lastIndexOf("\"");
       String substring = content.substring(firstIndex + 1, lastIndex);
-      substring = substring.replaceAll("\"", "'");
+      substring = substring.replaceAll("\"", "''");
       if (val[currentLine + 1] != null && val[currentLine + 1].trim() != "}") {
         cleared += "\"link\" : \"$substring\",\n";
       } else {

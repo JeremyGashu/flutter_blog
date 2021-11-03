@@ -6,7 +6,8 @@ class WidgetType {
   static const String image = 'image'; //done
   static const String code = 'code'; //done
   static const String quote = 'quote'; //done
-  static const String table = 'table'; //doing
+  static const String table = 'table'; //done
   static const String rawTool = 'rawTool'; //done
   static const String linkTool = 'linkTool'; //done
+  static const String video = 'video'; //done
 }

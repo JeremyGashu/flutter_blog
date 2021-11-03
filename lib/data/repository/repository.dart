@@ -23,8 +23,10 @@ class CoreRepository implements BaseRepository {
     });
 
     var decoded = jsonDecode(sanitizedString)['blocks'] as List;
+    print(sanitizedString);
 
     List<Widget> widgets = decoded.map((block) {
+      print('type => $block["type"]');
       return WidgetParser.parse(type: block['type'], json: block['data']);
     }).toList();
     return widgets;
