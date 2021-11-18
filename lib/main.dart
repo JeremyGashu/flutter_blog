@@ -1,27 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:prepreocessor_starter/data/datasource/datasource.dart';
 import 'package:prepreocessor_starter/presentation/blocs/preprocessor_bloc.dart';
-import 'package:prepreocessor_starter/presentation/blocs/preprocessor_event.dart';
 import 'package:prepreocessor_starter/presentation/blocs/preprocessor_state.dart';
-import 'data/repository/repository.dart';
+import 'package:prepreocessor_starter/presentation/pages/welcome/welcome_page.dart';
+import 'core/app_router.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-final _client = http.Client();
-final _dataSource = DataSource(_client);
-final _repository = CoreRepository(_dataSource);
-
 void main() {
-  runApp(MultiBlocProvider(
-      providers: [
-        BlocProvider<PreprocessorBloc>(
-          create: (_) => PreprocessorBloc(_repository)..add(LoadPreprocessor()),
-        ),
-      ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: PreprocessorPage(),
-      )));
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      onGenerateRoute: AppRouter.onGenerateRoutes,
+      initialRoute: WelcomePage.welcomePageRouteName,
+    ),
+  );
 }
 
 class PreprocessorPage extends StatelessWidget {

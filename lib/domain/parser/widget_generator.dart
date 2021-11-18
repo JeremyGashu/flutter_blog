@@ -13,7 +13,7 @@ import 'package:prepreocessor_starter/domain/models/table.dart';
 import 'package:prepreocessor_starter/domain/models/video.dart';
 import 'package:prepreocessor_starter/presentation/UI_component/code_component.dart';
 import 'package:prepreocessor_starter/presentation/UI_component/delimiter_component.dart';
-import 'package:prepreocessor_starter/presentation/UI_component/embeded_video_player_widget.dart';
+import 'package:prepreocessor_starter/presentation/UI_component/embeded_video_player_component.dart';
 import 'package:prepreocessor_starter/presentation/UI_component/header_component.dart';
 import 'package:prepreocessor_starter/presentation/UI_component/image_component.dart';
 import 'package:prepreocessor_starter/presentation/UI_component/link_component.dart';
