@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prepreocessor_starter/core/types/widget_types.dart';
 import 'package:prepreocessor_starter/domain/models/code.dart';
 import 'package:prepreocessor_starter/domain/models/delimiter.dart';
 import 'package:prepreocessor_starter/domain/models/header.dart';
@@ -11,7 +12,6 @@ import 'package:prepreocessor_starter/domain/models/raw_html.dart';
 import 'package:prepreocessor_starter/domain/models/table.dart';
 import 'package:prepreocessor_starter/domain/models/video.dart';
 import 'package:prepreocessor_starter/domain/parser/widget_generator.dart';
-import 'package:prepreocessor_starter/domain/types/widget_types.dart';
 
 class WidgetParser {
   static Widget parse(

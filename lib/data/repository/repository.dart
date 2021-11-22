@@ -18,10 +18,6 @@ class CoreRepository implements BaseRepository {
     
     String sanitizedString = sanitizeString(value: response.body);
 
-    sanitizedString.split('\n').forEach((element) { 
-      // print(element.trim());
-    });
-
     var decoded = jsonDecode(sanitizedString)['blocks'] as List;
     print(sanitizedString);
 
