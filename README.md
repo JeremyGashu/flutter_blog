@@ -1,16 +1,13 @@
-# prepreocessor_starter
 
 **This are helpfull informations for those who develop and participate on this
 project**
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+We will have 2 branches, develop and master. where the master is the one that is going to be for release purposewhile the develop is for development purpose
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+When working on a feature, branch out from develop branch and name your new branch in the manner of "feature_..."
+for example - feature_authorization.
 
 Our commit message standard is
 
