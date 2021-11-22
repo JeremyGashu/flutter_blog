@@ -1,6 +1,6 @@
 
-This are helpfull informations for those who develop and participate on this
-project
+**This are helpfull informations for those who develop and participate on this
+project**
 
 
 We will have 2 branches, develop and master. where the master is the one that is going to be for release purposewhile the develop is for development purpose
@@ -11,4 +11,6 @@ for example - feature_authorization.
 
 Our commit message standard is
 
+```bash
 git commit -m " Feature Description... Fixes #21(Issue Number) "
+```
