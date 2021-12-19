@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
           },
           backgroundColor: Colors.black,
           currentIndex: _currentIndex,
-          items: [
+          items: [ 
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: 'Home',

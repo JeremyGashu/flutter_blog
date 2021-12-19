@@ -42,11 +42,15 @@ dependencies:
   flutter_holo_date_picker: ^1.0.1+2
   lottie: ^1.2.1
   carousel_slider: ^4.0.0
+  hive: ^2.0.4
+  flutter_gherkin: ^2.0.0
 
 dev_dependencies:
-  flutter_test:
+  flutter_driver:
     sdk: flutter
   mockito: ^5.0.16
+  test: any
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

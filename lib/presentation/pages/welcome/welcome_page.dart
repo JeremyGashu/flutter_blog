@@ -9,6 +9,9 @@ import 'package:prepreocessor_starter/presentation/pages/signup/signup_page.dart
 
 class WelcomePage extends StatelessWidget {
   static const welcomePageRouteName = 'welcome_page_route_name';
+
+  
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,23 +52,31 @@ class WelcomePage extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              customButton('Log in', onTap: () {
-                Navigator.pushNamed(context, LoginPage.loginPageRouteName);
-              }),
+              Container(
+                key: ValueKey('loginButton'),
+                child: customButton('Log in', onTap: () {
+                  Navigator.pushNamed(context, LoginPage.loginPageRouteName);
+                }),
+              ),
               SizedBox(
                 height: 20,
               ),
-              customButton('Register',
-                  color: Colors.white, backgroundColor: kGreyColor, onTap: () {
-                Navigator.pushNamed(context, SignUpPage.signUpPageRouteName);
-              }),
+              Container(
+                key: ValueKey('signupButton'),
+                child: customButton('Register',
+                    color: Colors.white,
+                    backgroundColor: kGreyColor, onTap: () {
+                  Navigator.pushNamed(context, SignUpPage.signUpPageRouteName);
+                }),
+              ),
               SizedBox(
                 height: 20,
               ),
-              continueAsGestWidget(
-                onTap: () {
+              Container(
+                key: ValueKey('signUpAsGuestButton'),
+                child: continueAsGestWidget(onTap: () {
                   Navigator.pushNamed(context, HomePage.homePageRouteName);
-                }
+                }),
               ),
               SizedBox(
                 height: 30,
